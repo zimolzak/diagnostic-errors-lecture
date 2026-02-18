@@ -40,21 +40,19 @@ What is **Clinical research informatics?**
 
 
 
-# Main
-
 ## Ideas
 
 - problem representation
 
 
 
+## IOM figure
+
+FIXME: insert here
 
 
 
-
-# Graber
-
-## Historical milestones
+## Historical milestones (GRABER)
 
 - 2008: DEM conference
 - 2011: SIDM founded
@@ -93,10 +91,8 @@ What is **Clinical research informatics?**
 - Majority: errors in data synthesis, context failures, premature closure, absent differential
 
 
-# Croskerry
 
-
-## Satisficing (Herbert A. Simon)
+## Satisficing (Herbert A. Simon), CROSKERRY
 
 - Satisficing: stop at "good enough" rather than optimal
 - Clinical example: accepting an early plausible diagnosis without full differential
@@ -163,17 +159,14 @@ What is **Clinical research informatics?**
 
 
 
-# Schiff
-
-
-## Systems perspective (Gordy Schiff)
+## Systems perspective (SCHIFF)
 
 - Straw man fixes: more lectures, subspecialty care, more checklists---not sufficient
 - Real needs: acknowledge errors, reduce blame, improve situational awareness
 
 
 
-## Diagnostic error taxonomy (DEER)
+## Diagnosis Error Evaluation and Research Taxonomy
 
 - DEER elements: access to care, history, physical, tests, follow-up
 - Common system issues: incomplete test completion (*e.g.,* colonoscopies ~50% completed after ordering)
@@ -216,10 +209,8 @@ What is **Clinical research informatics?**
 - Open-loop: unverified assumptions, poorer safety
 
 
-# Meyer
 
-
-## EHRs and diagnosis---promise vs.\ problems
+## EHRs and diagnosis---promise vs.\ problems (MEYER)
 
 - HIT potential: better data access, decision support
 - Risks: template constraints, altered clinician-patient interaction, alert fatigue, copy/paste, information overload, burnout
@@ -241,7 +232,7 @@ What is **Clinical research informatics?**
 
 ## Alert fatigue and cognitive effects
 
-- Too many alerts → desensitization; important alerts may be ignored
+- Too many alerts $\to$ desensitization; important alerts may be ignored
 - EHRs can both improve and burden situational awareness
 
 
@@ -259,27 +250,6 @@ What is **Clinical research informatics?**
 - Build concise differentials; state likelihoods & contingencies in notes
 - Practice metacognition and debiasing routines (*e.g.,* "what would change my mind?")
 - Use EHRs to close loops: track tests, communicate results, document follow-up plans
-
-
-
-## References & further reading
-
-- Graber G. Reducing diagnostic error. Acad Med 2002
-- Croskerry papers on cognitive biases
-- Schiff GD. Diagnosis safety & DEER taxonomy
-- TACT program (Dalhousie)---debiasing curriculum
-- Selected bibliography from course notes (IOM report; Diagnosis journal; ECRI report)
-
-
-
-## Acknowledgments / course logistics
-
-- Course lead: Mark Graber, MD
-- Additional faculty: Gordy Schiff MD; Ashley Meyer (HIT)
-- Q&A: 15 minutes at end of session
-
-
-
 
 
 
