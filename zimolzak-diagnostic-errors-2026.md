@@ -81,7 +81,7 @@ What is **Clinical research informatics?**
 
 ## Incidence evidence
 
-- Autopsy studies: 10–30% had relevant missed diagnoses
+- Autopsy studies: 10--30% had relevant missed diagnoses
 - Limitations: Autopsy populations and time biases
 
 
@@ -222,7 +222,7 @@ What is **Clinical research informatics?**
 ## EHRs and diagnosis---promise vs.\ problems
 
 - HIT potential: better data access, decision support
-- Risks: template constraints, altered clinician–patient interaction, alert fatigue, copy/paste, information overload, burnout
+- Risks: template constraints, altered clinician-patient interaction, alert fatigue, copy/paste, information overload, burnout
 
 
 
@@ -232,7 +232,7 @@ What is **Clinical research informatics?**
 
 
 
-## Altered clinician–patient relationship
+## Altered clinician-patient relationship
 
 - Computer use can reduce perceived clinician attention/trust
 - Auto-release of results: useful but may lack clinician interpretation or guidance
