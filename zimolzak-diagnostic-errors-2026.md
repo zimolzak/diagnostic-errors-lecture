@@ -89,7 +89,7 @@ What is **Clinical research informatics?**
 ## Types of diagnostic failures
 
 - ~320 cognitive errors cataloged
-- Faulty data gathering ≈ 14%
+- Faulty data gathering $\approx$ 14%
 - Majority: errors in data synthesis, context failures, premature closure, absent differential
 
 
@@ -151,7 +151,7 @@ What is **Clinical research informatics?**
 ## Improving rationality and debiasing
 
 - Concepts: Rationality quotient, collect diverse info, seek nuance
-- Dual-process theory: System 1 (pattern recognition) vs System 2 (analytic)
+- Dual-process theory: System 1 (pattern recognition) vs.\ System 2 (analytic)
 - Debiasing strategies: recognition, metacognition, "think opposite," forcing functions---require practice
 
 
@@ -176,7 +176,7 @@ What is **Clinical research informatics?**
 ## Diagnostic error taxonomy (DEER)
 
 - DEER elements: access to care, history, physical, tests, follow-up
-- Common system issues: incomplete test completion (e.g., colonoscopies ~50% completed after ordering)
+- Common system issues: incomplete test completion (*e.g.,* colonoscopies ~50% completed after ordering)
 
 
 
@@ -195,7 +195,7 @@ What is **Clinical research informatics?**
 
 ## Practical pitfalls to watch for
 
-- Mistaken attribution (e.g., chest pain labeled stone)
+- Mistaken attribution (*e.g.,* chest pain labeled stone)
 - Ignoring limits of tests (false negatives)
 - Atypical presentations
 - Anchoring to chronic diagnoses
@@ -210,7 +210,7 @@ What is **Clinical research informatics?**
 
 
 
-## Closed-loop vs open-loop thinking
+## Closed-loop vs.\ open-loop thinking
 
 - Closed-loop: plan + contingencies + follow-up
 - Open-loop: unverified assumptions, poorer safety
@@ -219,7 +219,7 @@ What is **Clinical research informatics?**
 # Meyer
 
 
-## EHRs and diagnosis---promise vs problems
+## EHRs and diagnosis---promise vs.\ problems
 
 - HIT potential: better data access, decision support
 - Risks: template constraints, altered clinician–patient interaction, alert fatigue, copy/paste, information overload, burnout
@@ -257,7 +257,7 @@ What is **Clinical research informatics?**
 ## Takeaway actions for learners
 
 - Build concise differentials; state likelihoods & contingencies in notes
-- Practice metacognition and debiasing routines (e.g., "what would change my mind?")
+- Practice metacognition and debiasing routines (*e.g.,* "what would change my mind?")
 - Use EHRs to close loops: track tests, communicate results, document follow-up plans
 
 
