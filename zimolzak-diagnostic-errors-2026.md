@@ -11,9 +11,6 @@ colortheme: whale
 aspectratio: 169
 ---
 
-
-# Introduction to diagnostic error
-
 ## About me
 
  Yrs. | Org.      | Research                 | Clinical activities
@@ -28,6 +25,7 @@ What is **Clinical research informatics?**
 - I make various clinical research studies "go," using existing data.
 - "Phenotyping," usually using electronic health record **(EHR)** data
 
+# Introduction to diagnostic error
 
 ## Definition
 
@@ -37,8 +35,6 @@ Diagnostic error:
 - "Accurate" and "timely" are often unclear
 - Studying diagnosis in real time is hard. Gold standards often require hindsight.
 
-
-
 ## The diagnostic process[^national]
 
 ![diagnostic process](img/dxprocess.png)\
@@ -46,7 +42,6 @@ Diagnostic error:
 [^national]: National Academies of Sciences, Engineering, and Medicine
 2015. *Improving Diagnosis in Health Care.* Washington, DC: The
 National Academies Press.
-
 
 
 
@@ -137,9 +132,6 @@ Health information technology potential: better data access, decision support. R
 
 [^andm]: This section adapted from Ashley N.\ D.\ Meyer, DEM 2019 conference.
 
-
-
-
 ## HIT design considerations for safer diagnosis
 
 - Minimize unnecessary templates/alerts
@@ -192,7 +184,6 @@ Misses in **48.8%--84.9%**
 
 [^kapadia]: Kapadia P, Zimolzak AJ, Upadhyay DK, et al. Development and Implementation of a Digital Quality Measure of Emergency Cancer Diagnosis. J Clin Oncol. 2024;42(21):2506-2515. doi:10.1200/JCO.23.01523
 
-
 ## Measure 3: Advanced-stage cancer presentation[^advanced]
 
 lung cancer:
@@ -241,7 +232,6 @@ designed rules.
 - Goal: emulate human reviewers at larger scale. Detect possible
 missed opportunities in diagnosis **afterwards.** Not **predicting**
 in the ED!
-
 
 
 ## Study design: overview
@@ -347,7 +337,6 @@ remained in final models.
   CI
 
 
-
 ## Label counts: dizziness cohort
 
 - Rules-based flagged: 82 reviewed records
@@ -397,21 +386,6 @@ E-trigger            | True+/Total | PPV (CI)
 ## Example study flow diagram
 
 ![study flow](img/studyflow-crop.png)\
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
