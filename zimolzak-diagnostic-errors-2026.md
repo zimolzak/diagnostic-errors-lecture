@@ -11,38 +11,28 @@ colortheme: whale
 aspectratio: 169
 ---
 
-
-
-
 ## Objectives
 
 1. tk
 
-
-# Introduction
+# Introduction to diagnostic error
 
 ## About me
 
-| Yrs | Research activities                 | Clinical activities |
-|-----|-------------------------------------|------------------------------|
-| 3+1 | n/a                                 |  Internal medicine residency |
-| 2+1 | MMSc biomedical informatics         | Outpatient urgent care |
-| 4   | VA Boston: Clinical trials           | Hospitalist |
-| 5   | BCM & VA Houston: Health services research | Hospitalist |
+ Yrs. | Org.      | Research                 | Clinical activities
+-----|----------|--------------------------|------------------------------
+ 4   | SLU      | --                       |  Internal med.\ residency
+ 3   | HMS      | MMSc informatics         | Outpatient urgent care
+ 4   | BU/VA    | Clinical trial informatics          | Hospitalist
+ 7.5 | BCM/VA   |  Health services research, translational informatics | Hospitalist
 
 What is **Clinical research informatics?**
 
 - I make various clinical research studies "go," using existing data.
-- "Phenotyping" using electronic health record **(EHR)** data
+- "Phenotyping," usually using electronic health record **(EHR)** data
 
 
-
-
-
-
-## IOM figure
-
-FIXME: insert here
+## Definition
 
 Diagnostic error:
 : Failure to establish an accurate, timely explanation of the patient's health problem(s) or communicate it to the patient
@@ -51,38 +41,31 @@ Diagnostic error:
 - Studying diagnosis in real time is hard. Gold standards often require hindsight.
 
 
+
+## The diagnostic process[^national]
+
+![diagnostic process](img/dxprocess.png)\
+
+[^national]: National Academies of Sciences, Engineering, and Medicine
+2015. *Improving Diagnosis in Health Care.* Washington, DC: The
+National Academies Press.
+
+
+
+
+
 ## Studies of prevalence[^graber]
 
-- 10--30% had relevant missed diagnoses
-- Limitations: Autopsy populations and time biases
+- In autopsy studies, 10--30% had relevant missed diagnoses. Limitations: autopsy populations and time biases.
 
-40k-80k preventable hospital deaths
+- Estimaged 40k--80k preventable hospital deaths
 due to error[^leape].
 
-[^leape]: Leape, Berwick, Bates. *JAMA* 2002.
-
-
-
+- Review of malpractice cases: most failures reflect **thinking deficits** more than pure **knowledge gaps.**
 
 [^graber]: This section adapted from Mark Graber, DEM 2019 conference.
 
-## Types of diagnostic failures
-
-- ~320 cognitive errors cataloged
-- Faulty data gathering $\approx$ 14%
-- Majority: errors in data synthesis, context failures, premature closure, absent differential
-
-
-
-
-## Satisficing[^simon]
-
-- Satisficing: stop at "good enough" rather than optimal
-- Clinical example: accepting an early plausible diagnosis without full differential
-
-
-[^simon]: Simon, Herbert A. (1956). "Rational Choice and the Structure
-of the Environment." Psychological Review. 63 (2): 129--138.
+[^leape]: Leape, Berwick, Bates. *JAMA* 2002.
 
 
 
@@ -98,109 +81,66 @@ of the Environment." Psychological Review. 63 (2): 129--138.
 
 [^cross]: This section adapted from Pat Croskerry, DEM 2019 conference.
 
-
-## Legal and educational implications
-
-- Review of malpractice cases: diagnosis prominent (>200/347)
-- Most failures reflect thinking deficits more than pure knowledge gaps
-- Teaching needs: not just facts, but how to think
-
-
 ## Common cognitive biases (top examples)
 
-- Anchoring
-- Diagnostic momentum
-- Confirmation bias
-- Unpacking failure
-- Search satisficing
-- Framing effects
+$N$  |  Bias                 | When?
+-----|-----------------------|-----
+17   | Anchoring (*e.g.,* chronic dx) | early 
+16   | Dx momentum
+14   | Confirmation          | during
+13   | Unpacking failure
+..     | Search satisficing
+..     | Framing             | early
+..     | Ascertainment
 
+Satisficing:
+: Stopping at "good enough" rather than continuing to search for "best."[^simon] *E.g.,* accepting an early plausible diagnosis without full differential.
 
-## Where biases occur
+[^simon]: Simon, Herbert A. (1956). "Rational Choice and the Structure
+of the Environment." *Psychological Review* 63 (2): 129--138.
 
-- Early process: anchoring, framing
-- Throughout: confirmation, premature closure
-- Cognitive + affective biases = top sources of failure
-
-
-## Improving rationality and debiasing
-
-- Concepts: Rationality quotient, collect diverse info, seek nuance
-- Dual-process theory: System 1 (pattern recognition) vs.\ System 2 (analytic)
-- Debiasing strategies: recognition, metacognition, "think opposite," forcing functions---require practice
 
 
 
 ## Systems perspective[^gord]
 
-
-
-
-- Straw man fixes: more lectures, subspecialty care, more checklists---not sufficient
+- "Straw man" fixes: more lectures, subspecialty care, more checklists
 - Real needs: acknowledge errors, reduce blame, improve situational awareness
-
-Is it the system or the person? From one perspective, mostly the
-person[^reducing]. 
-
-- However, system problems often *create* cognitive constraints (time pressure, incomplete data)[^overlap]
+- Is it the system or the person? From one perspective, mostly the
+person.[^reducing] However, system problems often **create** cognitive constraints (time pressure, incomplete data).[^overlap]
 - Metrics for diagnostic safety are elusive; culture (nonpunitive) matters[^elusive]
-
-
-[^elusive]: Schiff GD. The Elusive and illusive quest for diagnostic
-safety metrics.
-
-
-[^overlap]: Gupta *et al. Diagnosis* 2018.
-
 
 [^gord]: This section adapted from Gordy Schiff, DEM 2019 conference.
 
 [^reducing]: Graber. Reducing diagnostic error. *Acad Med* 2002.
 
+[^overlap]: Gupta *et al. Diagnosis* 2018.
 
-
-
-## Diagnosis Error Evaluation and Research Taxonomy
-
-- DEER elements: access to care, history, physical, tests, follow-up
-- Common system issues: incomplete test completion (*e.g.,* colonoscopies ~50% completed after ordering)
-
+[^elusive]: Schiff GD. The Elusive and illusive quest for diagnostic
+safety metrics.
 
 
 
 
-## Practical pitfalls to watch for
+## EHRs and diagnosis---promise vs.\ problems[^andm]
 
-- Mistaken attribution (*e.g.,* chest pain labeled stone)
-- Ignoring limits of tests (false negatives)
-- Atypical presentations
-- Anchoring to chronic diagnoses
-- Overlook drug/environmental causes
+Health information technology potential: better data access, decision support. Risks:
 
+- template constraints
+    - Templates can improve workflow but may reduce face-to-face attention and encourage assumptions
+- altered clinician-patient interaction
+    - Computer use can reduce perceived clinician attention/trust
+    - Auto-release of results: useful but may lack clinician interpretation or guidance
+- alert fatigue
+    - Too many alerts $\to$ desensitization; important alerts may be ignored
+    - EHRs can both improve and burden situational awareness
+- copy/paste
+- information overload
+- burnout
 
-
-
-## EHRs and diagnosis---promise vs.\ problems
-
-- HIT potential: better data access, decision support
-- Risks: template constraints, altered clinician-patient interaction, alert fatigue, copy/paste, information overload, burnout
-
-
-## Example: templated notes
-
-- Templates can improve workflow but may reduce face-to-face attention and encourage assumptions (Ebola case example)
+[^andm]: This section adapted from Ashley N.\ D.\ Meyer, DEM 2019 conference.
 
 
-## Altered clinician-patient relationship
-
-- Computer use can reduce perceived clinician attention/trust
-- Auto-release of results: useful but may lack clinician interpretation or guidance
-
-
-## Alert fatigue and cognitive effects
-
-- Too many alerts $\to$ desensitization; important alerts may be ignored
-- EHRs can both improve and burden situational awareness
 
 
 ## HIT design considerations for safer diagnosis
@@ -212,12 +152,11 @@ safety metrics.
 
 
 
-
 # Digital Quality Measures
 
 ## Quality measures in general
 
-Common, but not necessarily for diagnosis.
+Common, but they mostly focus on **management,** not on **diagnosis.**
 
 ## Measure 1: Follow-up of abnormals[^Murphy]
 
@@ -233,12 +172,247 @@ Any of the above, **without** electronic evidence of appropriate follow-up. Also
 
 Colorectal:
 
-- 36.0% (26,746/74,314 patients) in the VA
-- 41.1% at Geisinger (1009/2461 patients)
+- 36.0% (26,746/74,314 patients) in the VA. Misses in **70%**
+- 41.1% at Geisinger (1009/2461 patients). Misses in **60%**
 
 Lung:
 
-- 61.5% (25,166/40,924 patients) in the VA
+- 61.5% (25,166/40,924 patients) in the VA. Misses in **27%**
+
+## Measure 2: Emergency cancer presentation[^kapadia]
+
+Colorectal:
+
+- 22.4% emergency presentation in VA
+- 7.5% emergency presentation in Geisinger
+
+Lung:
+
+- 20.9% emergency presentation in VA
+- 9.4% emergency presentation in Geisinger
+
+Misses in **48.8%--84.9%**
+
+[^kapadia]: Kapadia P, Zimolzak AJ, Upadhyay DK, et al. Development and Implementation of a Digital Quality Measure of Emergency Cancer Diagnosis. J Clin Oncol. 2024;42(21):2506-2515. doi:10.1200/JCO.23.01523
+
+
+## Measure 3: Advanced-stage cancer presentation[^advanced]
+
+lung cancer:
+
+- advanced stage in 45.9% at the VA. **59%** misses
+- advanced stage in 58.3% at Geisinger. **78%** misses
+
+Colorectal:
+
+- Advanced stage in 33.2% at the VA. **66%** misses
+- Advanced stage in 36.2% at Geisinger. **70%** misses
+
+[^advanced]: Zimolzak AJ, Kapadia P, Upadhyay DK, et al. Frequent Missed Opportunities for Earlier Diagnosis of Advanced-Stage Colorectal or Lung Cancer. JAMA Intern Med. 2025;185(9):1102-1108. doi:10.1001/jamainternmed.2025.2875
+
+## Epic Cosmos[^cosmos]
+
+We re-implemented the emergency presentation measure in a much larger (but de-identified) database. Lung cancer only.
+
+- Overall emergency presentation rate 19.6% $\approx$ 20.9% seen in VA lung cancer.
+
+Higher rate in patients with:
+
+- African-American vs.\ Caucasian race
+- younger age
+- higher social vulnerability
+- lower-income ZIP code
+- self-reported transport difficulties. 
+
+
+[^cosmos]: Zimolzak AJ, Khan SP, Singh H, Davila JA. Application of a digital quality measure for cancer diagnosis in Epic Cosmos. J Am Med Inform Assoc. 2025;32(1):227-229. doi:10.1093/jamia/ocae253
+
+
+
+
+# Machine learning
+
+## Objectives
+
+![paper title](img/papertitle.png)\
+
+Hypothesis:
+: We can improve e-trigger performance (identifying MODs) by
+considering multiple additional EHR variables, moving beyond manually
+designed rules.
+
+- Goal: emulate human reviewers at larger scale. Detect possible
+missed opportunities in diagnosis **afterwards.** Not **predicting**
+in the ED!
+
+
+# Methods
+
+## Study design: overview
+
+- Retrospective cohort analysis using VA national EHR (>20M
+  patients)
+
+- Two high-risk ED cohorts identified by rules-based e-triggers. These
+  rules were developed by an expert panel.[^Vaghani]
+
+[^Vaghani]: Vaghani *et al. JAMA Intern Med.* 2025;185(2):143--151.
+
+- Expert clinician review provided criterion labels (MOD vs.\ no MOD)
+  using standardized instrument developed from prior work (the Revised
+  Safer Dx Instrument).[^revised]
+
+[^revised]: Singh *et al. Diagnosis.* 2019;6(4):315--323.
+
+- Machine learning models trained and tested on structured EHR
+  variables
+
+- Flow: EHR $\to$ e-trigger $\to$ reviewer. "Two-stage filter."
+
+
+## E-trigger 1: dizziness + stroke risk factors
+
+- Inclusion: ED visits for dizziness/vertigo, in patients with stroke
+  risk factors.[^risk] (And discharged from ED to home)
+
+- Outcome: hospitalization *for stroke or TIA* within 30 days after ED
+  discharge
+
+- Timeframe: 2016--2020
+
+[^risk]: Two or more of: prior stroke, smoker, cholesterol, diabetes,
+hypertension, carotid stenosis, atrial fibrillation, aneurysm,
+coronary disease
+
+
+## E-trigger 2: abdominal pain + vitals
+
+- Inclusion: ED visits for abdominal pain, and patient has abnormal
+  temperature. (And discharged from ED to home)
+
+- Outcome: hospitalization within 10 days after ED discharge
+
+- Examples of missed diagnoses: cholangitis, cholecystitis, infectious
+  colitis
+
+
+## Data sources & labeling
+
+- Data: Structured EHR from index ED visit **and** subsequent hospital
+  data
+
+- Random sample of trigger-positive records reviewed by trained
+  clinicians using standardized instrument
+
+- Labeled records split into training and test sets
+
+
+## Structured EHR variables for ML
+
+- Dizziness model: 148 candidate variables
+
+- Abdominal pain model: 153 candidate variables
+
+- Types: demographics, vitals, labs, orders (imaging and
+  consultations), visit times, risk factors (past diagnoses). Details
+  in eTable 1 from paper Supplement,[^mainPaper] or in code.[^mainGH]
+
+[^mainPaper]: Zimolzak *et al. JAMA Netw Open.* 2024;7(9):e2431982.
+
+[^mainGH]: github.com/zimolzak/ml-detect-diagnostic-safety
+
+- Preselection via bivariate tests (t-test or $\chi^2$), $P < 0.10$.
+
+
+## ML features selected
+
+18 and 31 variables (dizziness and abdominal pain, respectively)
+remained in final models.
+
+- ED duration
+- Time from ED to inpatient admission
+- HR, BP, RR, pain, temperature (min, max, count, first; for ED and inpatient)
+- Ethnicity
+- CT scan ordered (yes/no)
+- CT scan abnormal (yes/no)
+- WBC, glucose, potassium, chloride, amylase
+- Prior ICD code cholecystitis, or cerebral aneurysm
+
+
+## Machine learning methods
+
+- Algorithms: regularized logistic regression and random forest
+
+- Random forest with limited tree depth to reduce overfitting
+
+- Tools: Python 3.7.4; `scipy`, `numpy`, `scikit-learn`
+
+- Performance metrics: positive predictive value (PPV) with 95% Wald
+  CI
+
+
+# Results
+
+## Label counts: dizziness cohort
+
+- Rules-based flagged: 82 reviewed records
+
+- Reviewer-identified MODs: 39/82 (PPV **48%**; 95% CI 37--58)
+
+
+## ML results: dizziness cohort
+
+Best ML (random forest) performance:
+
+- Correctly identified 36/39 true MODs
+  
+- Correctly identified 40/43 negatives
+  
+- PPV **92%** (95% CI 84--100)
+
+
+## Label counts: abdominal pain cohort
+
+- Rules-based flagged: 104 reviewed records
+
+- Reviewer-identified MODs: 31/104 (PPV **30%**; 95% CI 21--39)
+
+
+## ML results: abdominal pain cohort
+
+- ML correctly identified 26/31 true MODs and 71/73 negatives
+
+- PPV **93%** (95% CI 83--100)
+
+
+## Comparative table: rules vs.\ ML (summary)
+
+E-trigger            | True+/Total | PPV (CI)
+---------------------|:-----------:|---------
+**Dizziness**                | |
+\quad{} Rules-based positive for MOD | 39/82  | **48%** (37--58)
+\quad{} ML positive for MOD          | 36/39  | **92%** (84--100)
+\quad{} ML negative for MOD          | 3/43   | NA
+**Abdominal pain**           | |
+\quad{} Rules-based positive for MOD | 31/104 | **30%** (21--39)
+\quad{} ML positive for MOD          | 26/28  | **93%** (83--100)
+\quad{} ML negative for MOD          | 5/76   | NA
+
+
+## Example study flow diagram
+
+![study flow](img/studyflow-crop.png)\
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -255,8 +429,4 @@ Lung:
 
 - Source for this talk (make corrections/suggestions)--- <https://github.com/zimolzak/diagnostic-errors-lecture>
 
-- All PMIDs in slide references should work as hyperlinks.
-
 - This work © 2026 by Andrew Zimolzak is licensed under CC BY-NC-SA 4.0. [Click for license details.](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-
-- Cite using DOI (will insert when DOI available)
