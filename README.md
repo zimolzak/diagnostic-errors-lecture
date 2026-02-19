@@ -1,4 +1,4 @@
-# Diagnostic Errors
+# Diagnostic Errors and Informatics Solutions for Quality Improvement
 
 Andrew Zimolzak, MD, MMSc
 
