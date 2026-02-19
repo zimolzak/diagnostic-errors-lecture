@@ -19,6 +19,9 @@ aspectratio: 169
 1. tk
 
 
+## Ideas
+
+- problem representation
 
 
 
@@ -40,16 +43,12 @@ What is **Clinical research informatics?**
 
 
 
-## Ideas
-
-- problem representation
 
 
 
 ## IOM figure
 
 FIXME: insert here
-
 
 
 ## Historical milestones (GRABER)
@@ -61,13 +60,11 @@ FIXME: insert here
 - Coalition & funding: AHRQ grants; advocacy for research funding
 
 
-
 ## Why diagnostic error matters
 
 - ECRI: Dx error = top patient safety concern (2018)
 - Notable case: Rory Staunton---missed sepsis after an initial viral gastroenteritis diagnosis
 - Definition: Failure to establish an accurate, timely explanation of the patient's health problem(s) or communicate it to the patient
-
 
 
 ## Challenges with the definition
@@ -76,12 +73,10 @@ FIXME: insert here
 - Studying diagnosis in real time is hard---gold standards often require hindsight
 
 
-
 ## Incidence evidence
 
 - Autopsy studies: 10--30% had relevant missed diagnoses
 - Limitations: Autopsy populations and time biases
-
 
 
 ## Types of diagnostic failures
@@ -91,19 +86,16 @@ FIXME: insert here
 - Majority: errors in data synthesis, context failures, premature closure, absent differential
 
 
-
 ## Satisficing (Herbert A. Simon), CROSKERRY
 
 - Satisficing: stop at "good enough" rather than optimal
 - Clinical example: accepting an early plausible diagnosis without full differential
 
 
-
 ## Cognitive failure & clinical decision making
 
 - Key references: Pat Croskerry; large mortality comparisons (cardiac, cancer, medical error)
 - Diagnostic failure as a major patient safety problem (Newman-Toker)
-
 
 
 ## Six clusters contributing to diagnostic error
@@ -116,13 +108,11 @@ FIXME: insert here
 - Patient: communication, history accuracy
 
 
-
 ## Legal and educational implications
 
 - Review of malpractice cases: diagnosis prominent (>200/347)
 - Most failures reflect thinking deficits more than pure knowledge gaps
 - Teaching needs: not just facts, but how to think
-
 
 
 ## Common cognitive biases (top examples)
@@ -135,13 +125,11 @@ FIXME: insert here
 - Framing effects
 
 
-
 ## Where biases occur
 
 - Early process: anchoring, framing
 - Throughout: confirmation, premature closure
 - Cognitive + affective biases = top sources of failure
-
 
 
 ## Improving rationality and debiasing
@@ -151,12 +139,9 @@ FIXME: insert here
 - Debiasing strategies: recognition, metacognition, "think opposite," forcing functions---require practice
 
 
-
 ## Training & resources
 
 - TACT program (Dalhousie)---debiasing curriculum and exercises
-
-
 
 
 ## Systems perspective (SCHIFF)
@@ -165,12 +150,10 @@ FIXME: insert here
 - Real needs: acknowledge errors, reduce blame, improve situational awareness
 
 
-
 ## Diagnosis Error Evaluation and Research Taxonomy
 
 - DEER elements: access to care, history, physical, tests, follow-up
 - Common system issues: incomplete test completion (*e.g.,* colonoscopies ~50% completed after ordering)
-
 
 
 ## Overlap: system vs.\ cognitive errors
@@ -179,11 +162,9 @@ FIXME: insert here
 - Metrics for diagnostic safety are elusive; culture (nonpunitive) matters
 
 
-
 ## Situational awareness & high-reliability orgs
 
 - High-reliability organizations: preoccupation with failure, rehearsal of failure scenarios (Reason)
-
 
 
 ## Practical pitfalls to watch for
@@ -195,12 +176,10 @@ FIXME: insert here
 - Overlook drug/environmental causes
 
 
-
 ## Heuristics for high-risk presentations
 
 - 4 Rs (rare, rapid, remediable, really bad)
 - 4 Cs (continuing exposure, contagious, chronic progressive, confusing)
-
 
 
 ## Closed-loop vs.\ open-loop thinking
@@ -209,18 +188,15 @@ FIXME: insert here
 - Open-loop: unverified assumptions, poorer safety
 
 
-
 ## EHRs and diagnosis---promise vs.\ problems (MEYER)
 
 - HIT potential: better data access, decision support
 - Risks: template constraints, altered clinician-patient interaction, alert fatigue, copy/paste, information overload, burnout
 
 
-
 ## Example: templated notes
 
 - Templates can improve workflow but may reduce face-to-face attention and encourage assumptions (Ebola case example)
-
 
 
 ## Altered clinician-patient relationship
@@ -229,12 +205,10 @@ FIXME: insert here
 - Auto-release of results: useful but may lack clinician interpretation or guidance
 
 
-
 ## Alert fatigue and cognitive effects
 
 - Too many alerts $\to$ desensitization; important alerts may be ignored
 - EHRs can both improve and burden situational awareness
-
 
 
 ## HIT design considerations for safer diagnosis
@@ -244,12 +218,41 @@ FIXME: insert here
 - Improve test result interpretation & communication workflows
 
 
-
 ## Takeaway actions for learners
 
 - Build concise differentials; state likelihoods & contingencies in notes
 - Practice metacognition and debiasing routines (*e.g.,* "what would change my mind?")
 - Use EHRs to close loops: track tests, communicate results, document follow-up plans
+
+
+
+
+# Digital Quality Measures
+
+## Quality measures in general
+
+Common, but not necessarily for diagnosis.
+
+## Measure 1: Follow-up of abnormals[^Murphy]
+
+- Abnormal stool based screening **or**
+- Labs suggestive of iron deficiency anemia **or**
+- Abnormal chest imaging
+
+Any of the above, **without** electronic evidence of appropriate follow-up. Also multiple clinical exclusion criteria, *e.g.,* known reasons for blood in stool, more serious life-limiting diagnoses.
+
+[^Murphy]: Murphy DR, Zimolzak AJ, Upadhyay DK, *et al.* Developing electronic clinical quality measures to assess the cancer diagnostic process. *J Am Med Inform Assoc.* 2023;30(9):1526--1531.
+
+## Measure 1 results
+
+Colorectal:
+
+- 36.0% (26,746/74,314 patients) in the VA
+- 41.1% at Geisinger (1009/2461 patients)
+
+Lung:
+
+- 61.5% (25,166/40,924 patients) in the VA
 
 
 
