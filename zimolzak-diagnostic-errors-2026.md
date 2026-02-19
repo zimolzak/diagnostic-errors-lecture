@@ -11,9 +11,6 @@ colortheme: whale
 aspectratio: 169
 ---
 
-## Objectives
-
-1. tk
 
 # Introduction to diagnostic error
 
@@ -246,7 +243,6 @@ missed opportunities in diagnosis **afterwards.** Not **predicting**
 in the ED!
 
 
-# Methods
 
 ## Study design: overview
 
@@ -351,7 +347,6 @@ remained in final models.
   CI
 
 
-# Results
 
 ## Label counts: dizziness cohort
 
