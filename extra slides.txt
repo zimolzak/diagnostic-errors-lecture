@@ -1,0 +1,54 @@
+
+
+## Why diagnostic error matters
+
+- ECRI: Dx error = top patient safety concern (2018)
+- Notable case: Rory Staunton---missed sepsis after an initial viral gastroenteritis diagnosis
+- Definition: 
+
+
+
+## Historical milestones (GRABER)
+
+- 2008: DEM conference
+- 2011: SIDM founded
+- 2014: Diagnosis (journal) launched
+- 2015: IOM report on diagnostic error
+- Coalition & funding: AHRQ grants; advocacy for research funding
+
+
+
+## Cognitive failure & clinical decision making
+
+- Key references: Pat Croskerry; large mortality comparisons (cardiac, cancer, medical error)
+- Diagnostic failure as a major patient safety problem (Newman-Toker)
+
+## Training & resources
+
+- TACT program (Dalhousie)---debiasing curriculum and exercises
+
+
+
+
+## Situational awareness & high-reliability orgs
+
+- High-reliability organizations: preoccupation with failure, rehearsal of failure scenarios (Reason)
+
+## Heuristics for high-risk presentations
+
+- 4 Rs (rare, rapid, remediable, really bad)
+- 4 Cs (continuing exposure, contagious, chronic progressive, confusing)
+
+## Closed-loop vs.\ open-loop thinking
+
+- Closed-loop: plan + contingencies + follow-up
+- Open-loop: unverified assumptions, poorer safety
+
+## Takeaway actions for learners
+
+- Build concise differentials; state likelihoods & contingencies in notes
+- Practice metacognition and debiasing routines (*e.g.,* "what would change my mind?")
+- Use EHRs to close loops: track tests, communicate results, document follow-up plans
+
+
+

@@ -19,12 +19,6 @@ aspectratio: 169
 1. tk
 
 
-## Ideas
-
-- problem representation
-
-
-
 # Introduction
 
 ## About me
@@ -50,34 +44,27 @@ What is **Clinical research informatics?**
 
 FIXME: insert here
 
-
-## Historical milestones (GRABER)
-
-- 2008: DEM conference
-- 2011: SIDM founded
-- 2014: Diagnosis (journal) launched
-- 2015: IOM report on diagnostic error
-- Coalition & funding: AHRQ grants; advocacy for research funding
-
-
-## Why diagnostic error matters
-
-- ECRI: Dx error = top patient safety concern (2018)
-- Notable case: Rory Staunton---missed sepsis after an initial viral gastroenteritis diagnosis
-- Definition: Failure to establish an accurate, timely explanation of the patient's health problem(s) or communicate it to the patient
-
-
-## Challenges with the definition
+Diagnostic error:
+: Failure to establish an accurate, timely explanation of the patient's health problem(s) or communicate it to the patient
 
 - "Accurate" and "timely" are often unclear
-- Studying diagnosis in real time is hard---gold standards often require hindsight
+- Studying diagnosis in real time is hard. Gold standards often require hindsight.
 
 
-## Incidence evidence
+## Studies of prevalence[^graber]
 
-- Autopsy studies: 10--30% had relevant missed diagnoses
+- 10--30% had relevant missed diagnoses
 - Limitations: Autopsy populations and time biases
 
+40k-80k preventable hospital deaths
+due to error[^leape].
+
+[^leape]: Leape, Berwick, Bates. *JAMA* 2002.
+
+
+
+
+[^graber]: This section adapted from Mark Graber, DEM 2019 conference.
 
 ## Types of diagnostic failures
 
@@ -86,19 +73,21 @@ FIXME: insert here
 - Majority: errors in data synthesis, context failures, premature closure, absent differential
 
 
-## Satisficing (Herbert A. Simon), CROSKERRY
+
+
+## Satisficing[^simon]
 
 - Satisficing: stop at "good enough" rather than optimal
 - Clinical example: accepting an early plausible diagnosis without full differential
 
 
-## Cognitive failure & clinical decision making
-
-- Key references: Pat Croskerry; large mortality comparisons (cardiac, cancer, medical error)
-- Diagnostic failure as a major patient safety problem (Newman-Toker)
+[^simon]: Simon, Herbert A. (1956). "Rational Choice and the Structure
+of the Environment." Psychological Review. 63 (2): 129--138.
 
 
-## Six clusters contributing to diagnostic error
+
+
+## Six clusters contributing to diagnostic error[^cross]
 
 - Physician: knowledge, experience, demographics
 - Cognitive: personality, open-mindedness, bias tendency
@@ -106,6 +95,8 @@ FIXME: insert here
 - Environment: system design, ergonomics, teams
 - Disease: atypical presentations, mimics
 - Patient: communication, history accuracy
+
+[^cross]: This section adapted from Pat Croskerry, DEM 2019 conference.
 
 
 ## Legal and educational implications
@@ -139,15 +130,34 @@ FIXME: insert here
 - Debiasing strategies: recognition, metacognition, "think opposite," forcing functions---require practice
 
 
-## Training & resources
 
-- TACT program (Dalhousie)---debiasing curriculum and exercises
+## Systems perspective[^gord]
 
 
-## Systems perspective (SCHIFF)
+
 
 - Straw man fixes: more lectures, subspecialty care, more checklists---not sufficient
 - Real needs: acknowledge errors, reduce blame, improve situational awareness
+
+Is it the system or the person? From one perspective, mostly the
+person[^reducing]. 
+
+- However, system problems often *create* cognitive constraints (time pressure, incomplete data)[^overlap]
+- Metrics for diagnostic safety are elusive; culture (nonpunitive) matters[^elusive]
+
+
+[^elusive]: Schiff GD. The Elusive and illusive quest for diagnostic
+safety metrics.
+
+
+[^overlap]: Gupta *et al. Diagnosis* 2018.
+
+
+[^gord]: This section adapted from Gordy Schiff, DEM 2019 conference.
+
+[^reducing]: Graber. Reducing diagnostic error. *Acad Med* 2002.
+
+
 
 
 ## Diagnosis Error Evaluation and Research Taxonomy
@@ -156,15 +166,7 @@ FIXME: insert here
 - Common system issues: incomplete test completion (*e.g.,* colonoscopies ~50% completed after ordering)
 
 
-## Overlap: system vs.\ cognitive errors
 
-- System problems often create cognitive constraints (time pressure, incomplete data)
-- Metrics for diagnostic safety are elusive; culture (nonpunitive) matters
-
-
-## Situational awareness & high-reliability orgs
-
-- High-reliability organizations: preoccupation with failure, rehearsal of failure scenarios (Reason)
 
 
 ## Practical pitfalls to watch for
@@ -176,19 +178,9 @@ FIXME: insert here
 - Overlook drug/environmental causes
 
 
-## Heuristics for high-risk presentations
-
-- 4 Rs (rare, rapid, remediable, really bad)
-- 4 Cs (continuing exposure, contagious, chronic progressive, confusing)
 
 
-## Closed-loop vs.\ open-loop thinking
-
-- Closed-loop: plan + contingencies + follow-up
-- Open-loop: unverified assumptions, poorer safety
-
-
-## EHRs and diagnosis---promise vs.\ problems (MEYER)
+## EHRs and diagnosis---promise vs.\ problems
 
 - HIT potential: better data access, decision support
 - Risks: template constraints, altered clinician-patient interaction, alert fatigue, copy/paste, information overload, burnout
@@ -217,12 +209,6 @@ FIXME: insert here
 - Support documentation of differential, contingency plans, and urgent flags
 - Improve test result interpretation & communication workflows
 
-
-## Takeaway actions for learners
-
-- Build concise differentials; state likelihoods & contingencies in notes
-- Practice metacognition and debiasing routines (*e.g.,* "what would change my mind?")
-- Use EHRs to close loops: track tests, communicate results, document follow-up plans
 
 
 
