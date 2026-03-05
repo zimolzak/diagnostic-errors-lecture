@@ -36,6 +36,9 @@ Ownership interest: Stryker corporation (common stock, publically traded)
 
 ## Support
 
+tk
+
+
 
 
 
@@ -142,29 +145,35 @@ safety metrics.
 
 
 
-## EHRs and diagnosis---promise vs.\ problems[^andm]
+## Health IT and diagnosis---promise vs.\ problems[^andm]
 
-Health information technology potential: better data access, decision support. Risks:
+**Potential:** better data access and decision support.
 
-- template constraints
+**Risks:**
+
+- Template constraints
     - Templates can improve workflow but may reduce face-to-face attention and encourage assumptions
-- altered clinician-patient interaction
+- Altered clinician-patient interaction
     - Computer use can reduce perceived clinician attention/trust
     - Auto-release of results: useful but may lack clinician interpretation or guidance
-- alert fatigue
+- Alert fatigue
     - Too many alerts $\to$ desensitization; important alerts may be ignored
     - EHRs can both improve and burden situational awareness
-- copy/paste
-- information overload
-- burnout
+- Copy/paste
+- Information overload
+- Burnout
 
 [^andm]: This section adapted from Ashley N.\ D.\ Meyer, DEM 2019 conference.
 
-## HIT design considerations for safer diagnosis
+## Health IT design for safer diagnosis
 
-- Minimize unnecessary templates/alerts
-- Support documentation of differential, contingency plans, and urgent flags
-- Improve test result interpretation & communication workflows
+- Minimize unnecessary templates/alerts.
+
+- Support documentation of differential, contingency plans, and urgent flags.
+
+- Improve test result interpretation & communication workflows.
+
+Easier said than done?
 
 
 
@@ -175,70 +184,114 @@ Health information technology potential: better data access, decision support. R
 
 Common, but they mostly focus on **management,** not on **diagnosis.**
 
-## Measure 1: Follow-up of abnormals[^Murphy]
+## Measure 1: Follow-up of abnormal tests[^Murphy]
 
 - Abnormal stool based screening **or**
 - Labs suggestive of iron deficiency anemia **or**
 - Abnormal chest imaging
 
-Any of the above, **without** electronic evidence of appropriate follow-up. Also multiple clinical exclusion criteria, *e.g.,* known reasons for blood in stool, more serious life-limiting diagnoses.
+Any of the above, **without** electronic evidence of appropriate follow-up in a reasonable time.
 
-[^Murphy]: Murphy DR, Zimolzak AJ, Upadhyay DK, *et al.* Developing electronic clinical quality measures to assess the cancer diagnostic process. *J Am Med Inform Assoc.* 2023;30(9):1526--1531.
+Also multiple clinical exclusion criteria, *e.g.,* known reasons for blood in stool, more serious life-limiting diagnoses.
 
-## Measure 1 results
+[^Murphy]: Murphy DR, Zimolzak AJ, Upadhyay DK, *et al.* Developing electronic clinical quality measures to assess the cancer diagnostic process. *J Am Med Inform Assoc.* 2023;30(9):1526--1531. PMID [37257883](https://pubmed.ncbi.nlm.nih.gov/37257883/)
 
-Colorectal:
+## Measure 1 results (follow-up of abnormal tests)
 
-- 36.0% (26,746/74,314 patients) in the VA. Misses in **70%**
-- 41.1% at Geisinger (1009/2461 patients). Misses in **60%**
+Possible cancer | Health system | Abnormal tests | Appropriate follow-up | $n$ reviewed | MOD
+-------------|----------|------------------|-----------------|----------------|--------------
+Colorectal   |  VA      |  74,314          | 24,746 (36.0%)  | 100            | **70%**
+Colorectal   | Geisinger| 2461             | 1009 (41.1%)    | 100            | **60%**
+Lung         | VA       | 40,924           | 25,166 (61.5%)  | 100  |  **27%**
 
-Lung:
 
-- 61.5% (25,166/40,924 patients) in the VA. Misses in **27%**
+MOD = Missed opportunity for diagnosis. (When the electronic system found no appropriate follow-up, *and* manual review confirmed this.) Time period: CY 2019.
+
+
+
 
 ## Measure 2: Emergency cancer presentation[^kapadia]
 
-Colorectal:
+- Method in brief: Using cancer registry + EHR, find patients newly diagnosed with cancer, within 30 days after ED or unplanned inpatient visit.
 
-- 22.4% emergency presentation in VA
-- 7.5% emergency presentation in Geisinger
+- Standardized, expert chart review, evaluating for missed opportunities for diagnosis
 
-Lung:
 
-- 20.9% emergency presentation in VA
-- 9.4% emergency presentation in Geisinger
 
-Misses in **48.8%--84.9%**
+## Measure 2 (emergency presentation) results
 
-[^kapadia]: Kapadia P, Zimolzak AJ, Upadhyay DK, et al. Development and Implementation of a Digital Quality Measure of Emergency Cancer Diagnosis. J Clin Oncol. 2024;42(21):2506-2515. doi:10.1200/JCO.23.01523
+
+
+Cancer | System | Emergency presentation rate | Missed opportunities among EP  |  Mortality aOR
+-----------|----------|-----------------------|-----------------------|--------------------------
+Colorectal |  VA      |  22.4%           | **70.8%**  | 1.83 (1.61--2.07)
+Colorectal | Geisinger| 7.5%             | **77.8%**  |
+Lung       | VA       | 20.9%            | **48.8%**  | 1.74 (1.63--1.86)
+Lung       | Geisinger| 9.4%             | **84.9%**  |
+
+Mortality aOR = adjusted odds ratio (with 95% CI) for emergency presentation (vs.\ routine presentation) of 12-month mortality, controlling for several clinical factors including cancer stage.
+
+
+
+[^kapadia]: Kapadia P, Zimolzak AJ, Upadhyay DK, et al. Development and Implementation of a Digital Quality Measure of Emergency Cancer Diagnosis. J Clin Oncol. 2024;42(21):2506-2515. PMID [38718321](https://pubmed.ncbi.nlm.nih.gov/38718321/)
+
+
+
+
+
+
+
 
 ## Measure 3: Advanced-stage cancer presentation[^advanced]
 
-lung cancer:
 
-- advanced stage in 45.9% at the VA. **59%** misses
-- advanced stage in 58.3% at Geisinger. **78%** misses
 
-Colorectal:
+Cancer | System | Advanced-stage rate | Missed opportunities among advanced stage
+-----------|----------|------------------|----------------------------------------
+Colorectal |  VA      | 33.2%            | **66%**
+Colorectal | Geisinger| 36.2%            | **70%**
+Lung       | VA       | 45.9%            | **59%**
+Lung       | Geisinger| 58.3%            | **78%**
 
-- Advanced stage in 33.2% at the VA. **66%** misses
-- Advanced stage in 36.2% at Geisinger. **70%** misses
+
 
 [^advanced]: Zimolzak AJ, Kapadia P, Upadhyay DK, et al. Frequent Missed Opportunities for Earlier Diagnosis of Advanced-Stage Colorectal or Lung Cancer. JAMA Intern Med. 2025;185(9):1102-1108. doi:10.1001/jamainternmed.2025.2875
+
+
+
+
+## Our quality measure research in the news!
+
+Digital quality measures from our lab and others were recently adopted
+by AHRQ as exploratory Diagnostic Excellence Measures.
+
+<https://qualityindicators.ahrq.gov/tools/diagnostic_excellence>
+
+- **Do** use at the health system level to support internal quality improvement.
+- **Do** use to identify patterns that may warrant closer review.
+- **Don't** use for payment, public reporting, or other accountability purposes.
+
+Submit questions or suggestions to <qisupport@ahrq.hhs.gov>
+
+
+
+
+
 
 ## Epic Cosmos[^cosmos]
 
 We re-implemented the emergency presentation measure in a much larger (but de-identified) database. Lung cancer only.
 
-- Overall emergency presentation rate 19.6% $\approx$ 20.9% seen in VA lung cancer.
+- Overall emergency presentation rate 19.6%.
+- $\approx$ 20.9% seen in VA lung cancer.
 
-Higher rate in patients with:
+Higher rate of emergency lung cancer presentation in patients with:
 
 - African-American vs.\ Caucasian race
 - younger age
 - higher social vulnerability
 - lower-income ZIP code
-- self-reported transport difficulties. 
+- self-reported transport difficulties
 
 
 [^cosmos]: Zimolzak AJ, Khan SP, Singh H, Davila JA. Application of a digital quality measure for cancer diagnosis in Epic Cosmos. J Am Med Inform Assoc. 2025;32(1):227-229. doi:10.1093/jamia/ocae253
@@ -426,4 +479,4 @@ E-trigger            | True+/Total | PPV (CI)
 
 - Source for this talk (make corrections/suggestions)--- <https://github.com/zimolzak/diagnostic-errors-lecture>
 
-- This work © 2026 by Andrew Zimolzak is licensed under CC BY-NC-SA 4.0. [Click for license details.](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- This work © 2026 by Andrew Zimolzak is licensed under CC BY-NC-SA 4.0 and may be adapted or shared under some conditions. [Click for license details.](https://creativecommons.org/licenses/by-nc-sa/4.0/)
