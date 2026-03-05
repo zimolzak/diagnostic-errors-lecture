@@ -1,6 +1,7 @@
 ---
-title: Diagnostic Errors and Informatics Solutions for Quality Improvement
-author: Andrew Zimolzak, MD, MMSc
+title: Informatics & Artificial Intelligence Solutions for Diagnostic Errors
+author: Andrew J.\ Zimolzak, MD, MMSc
+shortauthor: Andrew Zimolzak, MD, MMSc
 institute:
  - <zimolzak@bcm.edu>
  - VA Center for Innovations in Quality, Effectiveness, and Safety (IQuESt)
@@ -10,6 +11,7 @@ theme: Goettingen
 fonttheme: structurebold
 colortheme: whale
 aspectratio: 169
+shorttitle: Informatics & AI for Diagnostic Error
 ---
 
 
@@ -34,9 +36,13 @@ Ownership interest: Stryker corporation (common stock, publically traded)
 
 
 
-## Support
+## Research support/funding
 
-tk
+- Gordon and Betty Moore Foundation (GBMF8838)
+
+- Houston VA HSR&D Center for Innovations in Quality, Effectiveness and Safety (CIN 13-413)
+
+- Agency for Healthcare Research and Quality (AHRQ) R01 HS027363-01
 
 
 
@@ -81,7 +87,7 @@ National Academies Press.
 
 - In autopsy studies, 10--30% had relevant missed diagnoses. Limitations: autopsy populations and time biases.
 
-- Estimaged 40k--80k preventable hospital deaths
+- Estimated 40k--80k preventable hospital deaths
 due to error[^leape].
 
 - Review of malpractice cases: most failures reflect **thinking deficits** more than pure **knowledge gaps.**
@@ -233,7 +239,7 @@ Mortality aOR = adjusted odds ratio (with 95% CI) for emergency presentation (vs
 
 
 
-[^kapadia]: Kapadia P, Zimolzak AJ, Upadhyay DK, et al. Development and Implementation of a Digital Quality Measure of Emergency Cancer Diagnosis. J Clin Oncol. 2024;42(21):2506-2515. PMID [38718321](https://pubmed.ncbi.nlm.nih.gov/38718321/)
+[^kapadia]: Kapadia P, Zimolzak AJ, Upadhyay DK, *et al.* Development and Implementation of a Digital Quality Measure of Emergency Cancer Diagnosis. *J Clin Oncol.* 2024;42(21):2506--2515. PMID [38718321](https://pubmed.ncbi.nlm.nih.gov/38718321/)
 
 
 
@@ -255,7 +261,7 @@ Lung       | Geisinger| 58.3%            | **78%**
 
 
 
-[^advanced]: Zimolzak AJ, Kapadia P, Upadhyay DK, et al. Frequent Missed Opportunities for Earlier Diagnosis of Advanced-Stage Colorectal or Lung Cancer. JAMA Intern Med. 2025;185(9):1102-1108. doi:10.1001/jamainternmed.2025.2875
+[^advanced]: Zimolzak AJ, Kapadia P, Upadhyay DK, *et al.* Frequent Missed Opportunities for Earlier Diagnosis of Advanced-Stage Colorectal or Lung Cancer. *JAMA Intern Med.* 2025;185(9):1102--1108.
 
 
 
@@ -294,7 +300,7 @@ Higher rate of emergency lung cancer presentation in patients with:
 - self-reported transport difficulties
 
 
-[^cosmos]: Zimolzak AJ, Khan SP, Singh H, Davila JA. Application of a digital quality measure for cancer diagnosis in Epic Cosmos. J Am Med Inform Assoc. 2025;32(1):227-229. doi:10.1093/jamia/ocae253
+[^cosmos]: Zimolzak AJ, Khan SP, Singh H, Davila JA. Application of a digital quality measure for cancer diagnosis in Epic Cosmos. *J Am Med Inform Assoc.* 2025;32(1):227--229.
 
 
 
