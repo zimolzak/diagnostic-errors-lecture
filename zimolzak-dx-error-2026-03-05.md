@@ -25,6 +25,8 @@ shorttitle: Informatics & AI for Diagnostic Error
 
 3. Interpret and compare performance metrics of rules-based versus machine-learning methods for detecting missed diagnostic opportunities.
 
+### Abbreviations
+
 MOD:
 : Missed opportunity for diagnosis
 
@@ -34,7 +36,7 @@ EHR:
 
 ## Disclosure
 
-Ownership interest: Stryker corporation (common stock, publicly traded)
+Ownership interest: Stryker Corporation (common stock, publicly traded)
 
 - My talk does not discuss products or services of this company.
 - My talk does not discuss unlabeled, off-label, or investigational use of any drug or device.
@@ -98,7 +100,7 @@ due to error[^leape].
 
 - Review of malpractice cases: most failures reflect **thinking deficits** more than pure **knowledge gaps.**
 
-[^Graber]: This section adapted from Mark Graber, DEM 2019 conference.
+[^Graber]: This section is adapted from Mark Graber, DEM 2019 conference.
 
 [^leape]: Leape, Berwick, Bates. *JAMA* 2002.
 
@@ -112,7 +114,7 @@ due to error[^leape].
 - Disease: atypical presentations, mimics
 - Patient: communication, history accuracy
 
-[^cross]: This section adapted from Pat Croskerry, DEM 2019 conference.
+[^cross]: This section was adapted from Pat Croskerry, DEM 2019 conference.
 
 
 ## Common cognitive biases (top examples)
@@ -145,7 +147,7 @@ person.[^reducing] However, system problems often **create** cognitive constrain
 
 - Metrics for diagnostic safety are elusive; culture (nonpunitive) matters[^elusive]
 
-[^Gordy]: This section adapted from Gordy Schiff, DEM 2019 conference.
+[^Gordy]: This section is adapted from Gordy Schiff, DEM 2019 conference.
 
 [^reducing]: Graber. Reducing diagnostic error. *Acad Med* 2002.
 
@@ -197,7 +199,7 @@ Measures are common, but they mostly focus on **management,** not on **diagnosis
 
 ## Measure 1: Follow-up of abnormal tests[^Murphy]
 
-- Abnormal stool based screening **or**
+- Abnormal stool-based screening **or**
 - Labs suggestive of iron deficiency anemia **or**
 - Abnormal chest imaging
 
@@ -235,7 +237,7 @@ Colorectal | Geisinger| 7.5%             | **77.8%**  |
 Lung       | VA       | 20.9%            | **48.8%**  | 1.74 (1.63--1.86)
 Lung       | Geisinger| 9.4%             | **84.9%**  |
 
-Mortality aOR = adjusted odds ratio (with 95% CI) for emergency presentation (vs.\ routine presentation) of 12-month mortality, controlling for several clinical factors including cancer stage.
+Mortality aOR = adjusted odds ratio (with 95% CI) for emergency presentation (vs.\ routine presentation) of 12-month mortality, controlling for several clinical factors, including cancer stage.
 
 [^Kapadia]: Kapadia P, Zimolzak AJ, Upadhyay DK, *et al.* Development and Implementation of a Digital Quality Measure of Emergency Cancer Diagnosis. *J Clin Oncol.* 2024;42(21):2506--2515. PMID [38718321](https://pubmed.ncbi.nlm.nih.gov/38718321/)
 
@@ -356,7 +358,7 @@ coronary disease
   data
 
 - Random sample of trigger-positive records reviewed by trained
-  clinicians using standardized instrument
+  clinicians using a standardized instrument
 
 - Labeled records were split into training and test sets.
 
@@ -457,6 +459,7 @@ E-trigger            | True+/Total | PPV (CI)
 
 
 
+
 # Wrap-up
 
 ## Recap of objectives
@@ -476,9 +479,9 @@ E-trigger            | True+/Total | PPV (CI)
 
 - Source for this talk (make corrections/suggestions)--- <https://github.com/zimolzak/diagnostic-errors-lecture>
 
-- This work © 2026 by Andrew Zimolzak is licensed under CC BY-NC-SA 4.0 and may be adapted or shared under some conditions. [Click for license details.](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- This work © 2026 by Andrew Zimolzak is licensed under Creative Commons BY-NC-SA 4.0 and may be adapted or shared under some conditions. [*Click* for license details.](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ### "Thank you!" to
 
-- Moore Foundation, AHRQ, IQuESt
+- Funding and support: Moore Foundation, AHRQ, IQuESt
 - Hardeep Singh and coauthors, especially Daniel Murphy, Paarth Kapadia, Divvy Upadhyay, Sundas Khan, Jessica Davila, Li Wei, Usman Mir, Umair Mushtaq, Ashish Gupta, Viral Vaghani, Devika Subramanian, Alexis Offner, Dean Sittig, Georgios Lyratzopoulos.
