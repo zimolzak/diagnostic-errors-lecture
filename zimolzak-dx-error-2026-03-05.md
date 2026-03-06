@@ -15,25 +15,29 @@ shorttitle: Informatics & AI for Diagnostic Error
 ---
 
 
+# Preliminaries
 
 ## Learning objectives
 
-
-1. Recognize when a missed opportunity in diagnosis has occurred, according to a commonly used definition
+1. Recognize when a missed opportunity for diagnosis has occurred, according to a commonly used definition
 
 2. Recognize patient encounters that would (or would not) be flagged by commonly used electronic-trigger criteria as at risk for missed diagnostic opportunities.
 
 3. Interpret and compare performance metrics of rules-based versus machine-learning methods for detecting missed diagnostic opportunities.
 
+MOD:
+: Missed opportunity for diagnosis
+
+EHR:
+: Electronic health record
 
 
 ## Disclosure
 
-Ownership interest: Stryker corporation (common stock, publically traded)
+Ownership interest: Stryker corporation (common stock, publicly traded)
 
 - My talk does not discuss products or services of this company.
 - My talk does not discuss unlabeled, off-label, or investigational use of any drug or device.
-
 
 
 ## Research support/funding
@@ -43,9 +47,6 @@ Ownership interest: Stryker corporation (common stock, publically traded)
 - Houston VA HSR&D Center for Innovations in Quality, Effectiveness and Safety (CIN 13-413)
 
 - Agency for Healthcare Research and Quality (AHRQ) R01 HS027363-01
-
-
-
 
 
 ## About me
@@ -61,6 +62,9 @@ What is **Clinical research informatics?**
 
 - I make various clinical research studies "go," using existing data.
 - "Phenotyping," usually using electronic health record **(EHR)** data
+
+
+
 
 # Introduction to diagnostic error
 
@@ -85,9 +89,7 @@ However, ...
 National Academies Press.
 
 
-
-
-## Studies of prevalence[^graber]
+## Studies of prevalence[^Graber]
 
 - In autopsy studies, 10--30% had relevant missed diagnoses. Limitations: autopsy populations and time biases.
 
@@ -96,11 +98,9 @@ due to error[^leape].
 
 - Review of malpractice cases: most failures reflect **thinking deficits** more than pure **knowledge gaps.**
 
-[^graber]: This section adapted from Mark Graber, DEM 2019 conference.
+[^Graber]: This section adapted from Mark Graber, DEM 2019 conference.
 
 [^leape]: Leape, Berwick, Bates. *JAMA* 2002.
-
-
 
 
 ## Six clusters contributing to diagnostic error[^cross]
@@ -113,6 +113,7 @@ due to error[^leape].
 - Patient: communication, history accuracy
 
 [^cross]: This section adapted from Pat Croskerry, DEM 2019 conference.
+
 
 ## Common cognitive biases (top examples)
 
@@ -127,15 +128,13 @@ $N$  |  Bias                 | When?
 ..     | Ascertainment
 
 Satisficing:
-: Stopping at "good enough" rather than continuing to search for "best."[^simon] *E.g.,* accepting an early plausible diagnosis without full differential.
+: Stopping at "good enough" rather than continuing to search for "best."[^Simon] *E.g.,* accepting an early plausible diagnosis without full differential.
 
-[^simon]: Simon, Herbert A. (1956). "Rational Choice and the Structure
+[^Simon]: Simon, Herbert A. (1956). "Rational Choice and the Structure
 of the Environment." *Psychological Review* 63 (2): 129--138.
 
 
-
-
-## Systems perspective[^gord]
+## Systems perspective[^Gordy]
 
 - "Straw man" fixes: more lectures, subspecialty care, more checklists
 
@@ -146,7 +145,7 @@ person.[^reducing] However, system problems often **create** cognitive constrain
 
 - Metrics for diagnostic safety are elusive; culture (nonpunitive) matters[^elusive]
 
-[^gord]: This section adapted from Gordy Schiff, DEM 2019 conference.
+[^Gordy]: This section adapted from Gordy Schiff, DEM 2019 conference.
 
 [^reducing]: Graber. Reducing diagnostic error. *Acad Med* 2002.
 
@@ -156,9 +155,7 @@ person.[^reducing] However, system problems often **create** cognitive constrain
 safety metrics.
 
 
-
-
-## Health IT and diagnosis---promise vs.\ problems[^andm]
+## Health IT and diagnosis---promise vs.\ problems[^ANDM]
 
 **The potential:** better data access and decision support.
 
@@ -175,7 +172,8 @@ safety metrics.
 - Information overload
 - Burnout
 
-[^andm]: This section adapted from Ashley N.\ D.\ Meyer, DEM 2019 conference.
+[^ANDM]: This section adapted from Ashley N.\ D.\ Meyer, DEM 2019 conference.
+
 
 ## Health IT design for safer diagnosis
 
@@ -196,6 +194,7 @@ Easier said than done?
 
 Measures are common, but they mostly focus on **management,** not on **diagnosis.**
 
+
 ## Measure 1: Follow-up of abnormal tests[^Murphy]
 
 - Abnormal stool based screening **or**
@@ -208,6 +207,7 @@ Also multiple clinical exclusion criteria, *e.g.,* known reasons for blood in st
 
 [^Murphy]: Murphy DR, Zimolzak AJ, Upadhyay DK, *et al.* Developing electronic clinical quality measures to assess the cancer diagnostic process. *J Am Med Inform Assoc.* 2023;30(9):1526--1531. PMID [37257883](https://pubmed.ncbi.nlm.nih.gov/37257883/)
 
+
 ## Measure 1 results (follow-up of abnormal tests)
 
 Possible cancer | Health system | Abnormal tests | Appropriate follow-up | $n$ reviewed | MOD
@@ -216,23 +216,17 @@ Colorectal   |  VA      |  74,314          | 24,746 (36.0%)  | 100            | 
 Colorectal   | Geisinger| 2461             | 1009 (41.1%)    | 100            | **60%**
 Lung         | VA       | 40,924           | 25,166 (61.5%)  | 100  |  **27%**
 
-
 MOD = Missed opportunity for diagnosis. (When the electronic system found no appropriate follow-up, *and* manual review confirmed this.) Time period: CY 2019.
 
 
-
-
-## Measure 2: Emergency cancer presentation[^kapadia]
+## Measure 2: Emergency cancer presentation[^Kapadia]
 
 - Method in brief: Using cancer registry + EHR, find patients newly diagnosed with cancer, within 30 days after ED or unplanned inpatient visit.
 
 - Standardized, expert chart review, evaluating for missed opportunities for diagnosis
 
 
-
 ## Measure 2 (emergency presentation) results
-
-
 
 Cancer | System | Emergency presentation rate | Missed opportunities among EP  |  Mortality aOR
 -----------|----------|-----------------------|-----------------------|--------------------------
@@ -243,20 +237,10 @@ Lung       | Geisinger| 9.4%             | **84.9%**  |
 
 Mortality aOR = adjusted odds ratio (with 95% CI) for emergency presentation (vs.\ routine presentation) of 12-month mortality, controlling for several clinical factors including cancer stage.
 
-
-
-[^kapadia]: Kapadia P, Zimolzak AJ, Upadhyay DK, *et al.* Development and Implementation of a Digital Quality Measure of Emergency Cancer Diagnosis. *J Clin Oncol.* 2024;42(21):2506--2515. PMID [38718321](https://pubmed.ncbi.nlm.nih.gov/38718321/)
-
-
-
-
-
-
+[^Kapadia]: Kapadia P, Zimolzak AJ, Upadhyay DK, *et al.* Development and Implementation of a Digital Quality Measure of Emergency Cancer Diagnosis. *J Clin Oncol.* 2024;42(21):2506--2515. PMID [38718321](https://pubmed.ncbi.nlm.nih.gov/38718321/)
 
 
 ## Measure 3: Advanced-stage cancer presentation[^advanced]
-
-
 
 Cancer | System | Advanced-stage rate | Missed opportunities among advanced stage
 -----------|----------|------------------|----------------------------------------
@@ -265,11 +249,7 @@ Colorectal | Geisinger| 36.2%            | **70%**
 Lung       | VA       | 45.9%            | **59%**
 Lung       | Geisinger| 58.3%            | **78%**
 
-
-
-[^advanced]: Zimolzak AJ, Kapadia P, Upadhyay DK, *et al.* Frequent Missed Opportunities for Earlier Diagnosis of Advanced-Stage Colorectal or Lung Cancer. *JAMA Intern Med.* 2025;185(9):1102--1108.
-
-
+[^advanced]: Zimolzak AJ, Kapadia P, Upadhyay DK, *et al.* Frequent Missed Opportunities for Earlier Diagnosis of Advanced-Stage Colorectal or Lung Cancer. *JAMA Intern Med.* 2025;185(9):1102--1108. PMID [40690229](https://pubmed.ncbi.nlm.nih.gov/40690229/)
 
 
 ## Our quality measure research in the news!
@@ -284,10 +264,6 @@ by AHRQ as exploratory Diagnostic Excellence Measures.
 - **Don't** use for payment, public reporting, or other accountability purposes.
 
 Submit questions or suggestions to <qisupport@ahrq.hhs.gov>
-
-
-
-
 
 
 ## Epic Cosmos[^cosmos]
@@ -305,25 +281,24 @@ Higher rate of emergency lung cancer presentation in patients with:
 - lower-income ZIP code
 - self-reported transport difficulties
 
-
 [^cosmos]: Zimolzak AJ, Khan SP, Singh H, Davila JA. Application of a digital quality measure for cancer diagnosis in Epic Cosmos. *J Am Med Inform Assoc.* 2025;32(1):227--229.
 
 
 
 
-# Machine learning
+# Machine learning enhancement of electronic triggers
 
 ## Objectives
 
 ![paper title](img/papertitle.png)\
 
 Hypothesis:
-: We can improve e-trigger performance (identifying MODs) by
+: We can improve e-trigger performance (identifying **MODs**) by
 considering multiple additional EHR variables, moving beyond manually
 designed rules.
 
 - Goal: emulate human reviewers at larger scale. Detect possible
-missed opportunities in diagnosis **afterwards.** Not **predicting**
+missed opportunities for diagnosis **afterwards.** Not **predicting**
 in the ED!
 
 
@@ -338,8 +313,8 @@ in the ED!
 [^Vaghani]: Vaghani *et al. JAMA Intern Med.* 2025;185(2):143--151.
 
 - Expert clinician review provided criterion labels (MOD vs.\ no MOD)
-  using standardized instrument developed from prior work (the Revised
-  Safer Dx Instrument).[^revised]
+  using standardized instrument developed from prior work (the **Revised
+  Safer Dx Instrument**).[^revised]
 
 [^revised]: Singh *et al. Diagnosis.* 2019;6(4):315--323.
 
@@ -351,10 +326,10 @@ in the ED!
 
 ## E-trigger 1: dizziness + stroke risk factors
 
-- Inclusion: ED visits for dizziness/vertigo, in patients with stroke
+- Inclusion 1: ED visits for dizziness/vertigo, in patients with stroke
   risk factors.[^risk] (And discharged from ED to home)
 
-- Outcome: hospitalization *for stroke or TIA* within 30 days after ED
+- Inclusion 2: hospitalization *for stroke or TIA* within 30 days after ED
   discharge
 
 - Timeframe: 2016--2020
@@ -366,10 +341,10 @@ coronary disease
 
 ## E-trigger 2: abdominal pain + vitals
 
-- Inclusion: ED visits for abdominal pain, and patient has abnormal
+- Inclusion 1: ED visits for abdominal pain, and patient has abnormal
   temperature. (And discharged from ED to home)
 
-- Outcome: hospitalization within 10 days after ED discharge
+- Inclusion 2: hospitalization within 10 days after ED discharge
 
 - Examples of missed diagnoses: cholangitis, cholecystitis, infectious
   colitis
@@ -383,7 +358,7 @@ coronary disease
 - Random sample of trigger-positive records reviewed by trained
   clinicians using standardized instrument
 
-- Labeled records split into training and test sets
+- Labeled records were split into training and test sets.
 
 
 ## Structured EHR variables for ML
@@ -392,7 +367,7 @@ coronary disease
 
 - Abdominal pain model: 153 candidate variables
 
-- Types: demographics, vitals, labs, orders (imaging and
+- Variable types: demographics, vitals, labs, orders (imaging and
   consultations), visit times, risk factors (past diagnoses). Details
   in eTable 1 from paper Supplement,[^mainPaper] or in code.[^mainGH]
 
@@ -406,7 +381,7 @@ coronary disease
 ## ML features selected
 
 18 and 31 variables (dizziness and abdominal pain, respectively)
-remained in final models.
+remained in final models, including:
 
 - ED duration
 - Time from ED to inpatient admission
@@ -415,7 +390,7 @@ remained in final models.
 - CT scan ordered (yes/no)
 - CT scan abnormal (yes/no)
 - WBC, glucose, potassium, chloride, amylase
-- Prior ICD code cholecystitis, or cerebral aneurysm
+- Prior ICD code for cholecystitis, or cerebral aneurysm
 
 
 ## Machine learning methods
@@ -430,7 +405,7 @@ remained in final models.
   CI
 
 
-## Label counts: dizziness cohort
+## Ordinary e-trigger performance: dizziness cohort
 
 - Rules-based flagged: 82 reviewed records
 
@@ -448,7 +423,7 @@ Best ML (random forest) performance:
 - PPV **92%** (95% CI 84--100)
 
 
-## Label counts: abdominal pain cohort
+## Ordinary e-trigger performance: abdominal pain cohort
 
 - Rules-based flagged: 104 reviewed records
 
@@ -482,8 +457,18 @@ E-trigger            | True+/Total | PPV (CI)
 
 
 
+# Wrap-up
 
-## Thank you!
+## Recap of objectives
+
+1. Recognize when a missed opportunity for diagnosis has occurred
+
+2. Recognize when an electronic trigger would flag an encounter
+
+3. Compare rules-based versus machine learning methods for detecting missed opportunities for diagnosis.
+
+
+## Questions?
 
 ### Contact me or review materials:
 
@@ -492,3 +477,8 @@ E-trigger            | True+/Total | PPV (CI)
 - Source for this talk (make corrections/suggestions)--- <https://github.com/zimolzak/diagnostic-errors-lecture>
 
 - This work © 2026 by Andrew Zimolzak is licensed under CC BY-NC-SA 4.0 and may be adapted or shared under some conditions. [Click for license details.](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+### "Thank you!" to
+
+- Moore Foundation, AHRQ, IQuESt
+- Hardeep Singh and coauthors, especially Daniel Murphy, Paarth Kapadia, Divvy Upadhyay, Sundas Khan, Jessica Davila, Li Wei, Usman Mir, Umair Mushtaq, Ashish Gupta, Viral Vaghani, Devika Subramanian, Alexis Offner, Dean Sittig, Georgios Lyratzopoulos.
