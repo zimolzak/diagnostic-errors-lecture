@@ -117,25 +117,6 @@ due to error[^leape].
 [^cross]: This section was adapted from Pat Croskerry, DEM 2019 conference.
 
 
-## Common cognitive biases (top examples)
-
-$N$  |  Bias                 | When?
------|-----------------------|-----
-17   | Anchoring (*e.g.,* chronic dx) | early 
-16   | Dx momentum
-14   | Confirmation          | during
-13   | Unpacking failure
-..     | Search satisficing
-..     | Framing             | early
-..     | Ascertainment
-
-Satisficing:
-: Stopping at "good enough" rather than continuing to search for "best."[^Simon] *E.g.,* accepting an early plausible diagnosis without full differential.
-
-[^Simon]: Simon, Herbert A. (1956). "Rational Choice and the Structure
-of the Environment." *Psychological Review* 63 (2): 129--138.
-
-
 ## Systems perspective[^Gordy]
 
 - "Straw man" fixes: more lectures, subspecialty care, more checklists
@@ -323,7 +304,7 @@ in the ED!
 - Machine learning models trained and tested on structured EHR
   variables
 
-- Flow: EHR $\to$ e-trigger $\to$ reviewer. "Two-stage filter."
+- Flow: EHR $\to$ e-trigger $\to$ reviewer or ML. "Two-stage filter."
 
 
 ## E-trigger 1: dizziness + stroke risk factors
@@ -455,7 +436,7 @@ E-trigger            | True+/Total | PPV (CI)
 
 ## Example study flow diagram
 
-![study flow](img/studyflow-crop.png)\
+![study flow](img/studyflow-crop.png){ height=90% }\
 
 
 
