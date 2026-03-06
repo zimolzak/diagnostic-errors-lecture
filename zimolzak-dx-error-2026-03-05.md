@@ -69,8 +69,12 @@ What is **Clinical research informatics?**
 Diagnostic error:
 : Failure to establish an accurate, timely explanation of the patient's health problem(s) or communicate it to the patient
 
-- "Accurate" and "timely" are often unclear
+However, ...
+
+- "Accurate" and "timely" are often unclear.
+
 - Studying diagnosis in real time is hard. Gold standards often require hindsight.
+
 
 ## The diagnostic process[^national]
 
@@ -134,9 +138,12 @@ of the Environment." *Psychological Review* 63 (2): 129--138.
 ## Systems perspective[^gord]
 
 - "Straw man" fixes: more lectures, subspecialty care, more checklists
+
 - Real needs: acknowledge errors, reduce blame, improve situational awareness
+
 - Is it the system or the person? From one perspective, mostly the
 person.[^reducing] However, system problems often **create** cognitive constraints (time pressure, incomplete data).[^overlap]
+
 - Metrics for diagnostic safety are elusive; culture (nonpunitive) matters[^elusive]
 
 [^gord]: This section adapted from Gordy Schiff, DEM 2019 conference.
@@ -153,18 +160,17 @@ safety metrics.
 
 ## Health IT and diagnosis---promise vs.\ problems[^andm]
 
-**Potential:** better data access and decision support.
+**The potential:** better data access and decision support.
 
-**Risks:**
+**The risks:**
 
-- Template constraints
-    - Templates can improve workflow but may reduce face-to-face attention and encourage assumptions
+- Template constraints: improved workflow but may reduce face-to-face attention and encourage assumptions
 - Altered clinician-patient interaction
-    - Computer use can reduce perceived clinician attention/trust
+    - Reduces perceived clinician attention/trust
     - Auto-release of results: useful but may lack clinician interpretation or guidance
 - Alert fatigue
-    - Too many alerts $\to$ desensitization; important alerts may be ignored
-    - EHRs can both improve and burden situational awareness
+    - Causes desensitization; important alerts may be ignored
+    - EHRs can both **improve and burden** situational awareness
 - Copy/paste
 - Information overload
 - Burnout
@@ -188,7 +194,7 @@ Easier said than done?
 
 ## Quality measures in general
 
-Common, but they mostly focus on **management,** not on **diagnosis.**
+Measures are common, but they mostly focus on **management,** not on **diagnosis.**
 
 ## Measure 1: Follow-up of abnormal tests[^Murphy]
 
